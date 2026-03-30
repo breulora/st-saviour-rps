@@ -18,6 +18,8 @@ if __name__ == '__main__':
     while i < 3:
 
         player = input('please enter rock, paper or scissors: ')
+        while player != 'rock' and player != 'paper' and player != 'scissors':
+            player = input('sorry, please enter rock, paper or scissors: ')
 
         r = random.randint(0, 2)
 
